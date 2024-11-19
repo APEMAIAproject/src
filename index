@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEMAIAproject</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            margin: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2em;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>APEMAIAproject</h1>
+        <p>Fostering Cooperation and Sharing in Software Development</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#modules">Source Code Modules</a>
+        <a href="#stakeholders">Stakeholders</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About the Project</h2>
+            <p>Welcome to the official website of <strong>APEMAIAproject</strong>, a collaborative initiative aimed at developing, sharing, and integrating software modules to address key challenges. This platform serves as a hub for cooperation among project partners and stakeholders.</p>
+        </section>
+        <section id="modules">
+            <h2>Source Code Modules</h2>
+            <p>The project source code is structured into the following key modules:</p>
+            <ul>
+                <li><strong>Preprocessing:</strong> Tools for data cleaning and preparation.</li>
+                <li><strong>Procedures:</strong> Core algorithms and processes.</li>
+                <li><strong>Utils:</strong> Utility functions and helper scripts.</li>
+            </ul>
+            <p>Each module is designed for modularity and ease of integration, promoting code reuse and efficient collaboration.</p>
+        </section>
+        <section id="stakeholders">
+            <h2>Partners and Stakeholders</h2>
+            <p>Our project involves a diverse group of stakeholders, including research institutions, industry partners, and public organizations. Together, we aim to achieve impactful outcomes through collaborative efforts.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 APEMAIAproject. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
