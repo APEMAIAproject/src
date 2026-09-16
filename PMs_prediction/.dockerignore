@@ -1,0 +1,13 @@
+.git
+.github
+output
+output/**
+*.csv
+*.csv.gz
+*.zip
+!spatial/grid_puglia_minimal.gpkg.zip
+!spatial/grid_bari_minimal.gpkg.zip
+*.png
+*.gpkg
+.Rhistory
+.DS_Store
