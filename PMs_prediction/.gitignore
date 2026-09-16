@@ -1,0 +1,8 @@
+output/
+*.csv
+!input_template.csv
+!examples/test.data.csv.gz
+.Rhistory
+.DS_Store
+Thumbs.db
+*.log
