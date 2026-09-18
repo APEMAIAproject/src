@@ -1,0 +1,9 @@
+output/
+examples/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+.gitattributes
+README.md
+CHECKSUMS.sha256

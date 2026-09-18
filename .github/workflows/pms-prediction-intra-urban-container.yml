@@ -1,4 +1,4 @@
-name: Build and publish PMs prediction container
+name: Build and publish PMs prediction intra-urban container
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
       - main
       - master
     paths:
-      - 'PMs_prediction/**'
-      - '.github/workflows/pms-prediction-container.yml'
+      - 'PMs_prediction_intra_urban/**'
+      - '.github/workflows/pms-prediction-intra-urban-container.yml'
   workflow_dispatch:
 
 permissions:
@@ -36,20 +36,20 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/apemaiaproject/pms-prediction
+          images: ghcr.io/apemaiaproject/pms-prediction-intra-urban
           tags: |
             type=raw,value=latest
-            type=raw,value=5.1.0
+            type=raw,value=1.0.1
             type=sha,prefix=sha-
           labels: |
             org.opencontainers.image.source=https://github.com/APEMAIAproject/src
-            org.opencontainers.image.description=APEMAIA PM10/PM2.5 inference over Puglia and Bari
+            org.opencontainers.image.description=APEMAIA PM10 intra-urban inference over Bari
 
       - name: Build and push image
         uses: docker/build-push-action@v6
         with:
-          context: ./PMs_prediction
-          file: ./PMs_prediction/Dockerfile
+          context: ./PMs_prediction_intra_urban
+          file: ./PMs_prediction_intra_urban/Dockerfile
           push: true
           platforms: linux/amd64
           tags: ${{ steps.meta.outputs.tags }}
